@@ -1,0 +1,12 @@
+AllCops:
+  TargetRubyVersion: 2.7
+  Exclude:
+    - 'bin/*'
+    - 'tmp/**/*'
+  DisplayCopNames: true
+  NewCops: enable
+  CacheRootDirectory: tmp # ie. tmp/rubocop_cache
+  UseCache: true
+
+Style/StringLiterals:
+  EnforcedStyle: double_quotes

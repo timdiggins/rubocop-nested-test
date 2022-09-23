@@ -1,0 +1,16 @@
+require:
+  - rubocop-performance
+
+AllCops:
+  TargetRubyVersion: 2.7
+  Exclude:
+    - 'bin/*'
+    - 'tmp/**/*'
+    - 'nested-project/**/*'
+  DisplayCopNames: true
+  NewCops: enable
+  CacheRootDirectory: tmp # ie. tmp/rubocop_cache
+  UseCache: true
+
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
